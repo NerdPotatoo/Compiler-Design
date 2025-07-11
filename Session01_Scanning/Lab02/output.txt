@@ -1,0 +1,8 @@
+1:#include <stdio.h>
+2:#include <math.h>
+3:int main()
+4:{
+5:    // printf() displays the string inside quotation
+6:    printf("Hello, World!");
+7:    return 0;
+8:}
