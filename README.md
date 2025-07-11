@@ -54,16 +54,16 @@ Welcome to the **Compiler Design Lab** repository. This repo contains all lab wo
 
 ## 📁 Folder Structure
 
-/CompilerDesignLab
-│
-├── Session01_Scanning/
-├── Session02_LexicalAnalysis/
-├── Session03_SymbolTable/
-├── Session04_SyntaxErrors/
-├── Session05_CFGs/
-├── Session06_PredictiveParsing/
-├── Session07_FinalProject/
-└── README.md
+- /CompilerDesignLab
+- │
+- ├── Session01_Scanning/
+- ├── Session02_LexicalAnalysis/
+- ├── Session03_SymbolTable/
+- ├── Session04_SyntaxErrors/
+- ├── Session05_CFGs/
+- ├── Session06_PredictiveParsing/
+- ├── Session07_FinalProject/
+- └── README.md
 
 
 ---
@@ -71,9 +71,9 @@ Welcome to the **Compiler Design Lab** repository. This repo contains all lab wo
 ## 🚀 How to Use
 
 1. Clone the repository:
-   git clone https://github.com/your-username/CompilerDesignLab.git
-   cd CompilerDesignLab
+   - git clone https://github.com/your-username/CompilerDesignLab.git
+   - cd CompilerDesignLab
 2. Navigate into the session folder and compile the file(s):
-    cd Session02_LexicalAnalysis
-    g++ lexer.cpp -o lexer
-    ./lexer
+   - cd Session02_LexicalAnalysis
+   - g++ lexer.cpp -o lexer
+   - ./lexer
