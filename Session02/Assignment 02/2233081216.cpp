@@ -98,7 +98,7 @@ int main()
         while(s>>word)
         {
             // cout << word << '\n';
-            string sub = "";
+            string lexem = "";
             for(int i = 0; i<word.size(); i++)
             {
 
@@ -106,11 +106,24 @@ int main()
                 {
                     if(i<word.size()-1 && word[i+1] == '=')
                     {
-                        sub += " >= "; 
+                        lexem += " >= "; 
                         i++;
                     }
                     else{
-                        sub += " > ";
+                        lexem += " > ";
+                    }
+                    
+                    continue;
+                }
+                if(word[i] == '=')
+                {
+                    if(i<word.size()-1 && word[i+1] == '=')
+                    {
+                        lexem += " == "; 
+                        i++;
+                    }
+                    else{
+                        lexem += " = ";
                     }
                     
                     continue;
@@ -119,26 +132,26 @@ int main()
                 {
                     if(i<word.size()-1 && word[i+1] == '=')
                     {
-                        sub += " <= ";
+                        lexem += " <= ";
                         i++;
                     }
                     else{
-                        sub += " < ";
+                        lexem += " < ";
                     }
                     continue;
                 }
-                if(word[i] == '=' || word[i] == ',' || word[i] == ';' || word[i] == '(' || word[i] == ')' || word[i] == '*' || word[i] == '/' || word[i] == '+' || word[i] == '-' || word[i] == '|' || word[i] == '&' || word[i] == '\'')
+                if(word[i] == ',' || word[i] == ';' || word[i] == '(' || word[i] == ')' || word[i] == '*' || word[i] == '/' || word[i] == '+' || word[i] == '-' || word[i] == '|' || word[i] == '&' || word[i] == '\'')
                 {
-                    sub += " ";
-                    sub += word[i];
-                    sub += " ";
+                    lexem += " ";
+                    lexem += word[i];
+                    lexem += " ";
                     continue;
                 }
-                sub += word[i];
+                lexem += word[i];
             }
             // cout << sub << '\n';
-            stringstream sub1(sub);
-            while(sub1>>word)
+            stringstream lex(lexem);
+            while(lex>>word)
             {
                 if(kw(word))
                 {
