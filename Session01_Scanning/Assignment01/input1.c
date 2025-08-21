@@ -2,8 +2,7 @@
 
 int main(void)
 {
-
-int x;// Single Line Comment
+// Single Line Comment
 
     printf ("Hello");
 /* Multi

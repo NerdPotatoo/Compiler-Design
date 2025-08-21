@@ -15,7 +15,6 @@ int main()
     int ok = 0;
     while(getline(f,l))
     {
-        
         size_t flag1 = l.find("/*");
         size_t flag2 = l.find("*/");
         if(flag1 != string::npos) ok = 1;
@@ -41,8 +40,7 @@ int main()
                 }
 
                 if(flag) f2 << c;
-            }
-            // f2 << l;
+            } 
         }
     }
     f.close();
