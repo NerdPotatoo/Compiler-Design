@@ -2,7 +2,7 @@
 using namespace std;
 bool kw(string str)
 {
-    if ((str== "if") || (str == "else") ||
+    if ((str== "if") || (str == "else") || 
         (str== "while") || (str == "do") ||
         (str== "break") ||  (str =="continue")
         || (str== "int") || (str =="double")
