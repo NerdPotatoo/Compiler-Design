@@ -1,0 +1,1 @@
+[float] [id_x1] [=] [3.125] [;] [double] [id_f1] [(] [int] [id_x] [)] [{] [double] [id_z] [;] [id_z] [=] [0.01] [+] [id_x] [*] [5.5] [;] [return] [id_z] [;] [}] [int] [id_main] [(] [void] [)] [{] [int] [id_n1] [;] [double] [id_z] [;] [id_n1] [=] [25] [sep ;] [id_z] [=] [id_f1] [(] [id_n1] [)] 
