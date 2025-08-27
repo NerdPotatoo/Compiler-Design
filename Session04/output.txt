@@ -1,3 +1,6 @@
+misplaced ';' at line 1
+misplaced ';' at line 4
 Misplaced '}' at line 5
+Unmatched else at line 6
 Misplaced '}' at line 7
 Misplaced '{' at line 9
